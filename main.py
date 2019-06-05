@@ -3,13 +3,13 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import xarray as xr
-# import functions from utils here
+import matplotlib.pyplot as plt
 
 input_dir  = Path("data")
 output_dir = Path("solution")
 
-# 1. Go to http://surfobs.climate.copernicus.eu/dataaccess/access_eobs.php#datafiles and 
-#    download the 0.25 deg. file for daily mean temperature. 
+# 1. Go to http://surfobs.climate.copernicus.eu/dataaccess/access_eobs.php#datafiles
+#    and download the 0.25 deg. file for daily mean temperature.
 #    Save the file into the data directory but don't commit it to github!!! [2P]
 
 
@@ -17,12 +17,13 @@ output_dir = Path("solution")
 #    Calculate monthly means for the reference periode 1981-2010 for Europe (Extent: Lon_min:-13, Lon_max: 25, Lat_min: 30, Lat_max: 72). [2P]
 
 
-# 3. Calculate monthly anomalies for 2018 for the reference period and extent in #2.
+# 3. Calculate monthly anomalies from the reference period for the year 2018 (use the same extent as in #2).
 #    Make a quick plot of the anomalies for the region. [2P]
 
 
-# 4. Calculate the mean anomaly for the year 2018 for Europe and compare it to the anomaly of the element which contains
-#    Marburg. Is the anomaly of Marburg lower or higher than the one for Europe? [2P] 
+# 4. Calculate the mean anomaly for the year 2018 for Europe (over all pixels of the extent from #2) 
+#    Compare this overall mean anomaly to the anomaly of the pixel which contains Marburg. 
+#    Is the anomaly of Marburg lower or higher than the one for Europe? [2P] 
 
 
 # 5. Write the monthly anomalies from task 3 to a netcdf file with name "europe_anom_2018.nc" to the solution directory.
