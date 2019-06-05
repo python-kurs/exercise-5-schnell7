@@ -5,12 +5,12 @@ import pandas as pd
 import xarray as xr
 # import functions from utils here
 
-output_dir = Path("data")
+input_dir  = Path("data")
 output_dir = Path("solution")
 
 # 1. Go to http://surfobs.climate.copernicus.eu/dataaccess/access_eobs.php#datafiles and 
-#    download the 0.25 deg. file for daily mean temperature. Save the file into the data directory
-#    but don't commit it to github. [2P]
+#    download the 0.25 deg. file for daily mean temperature. 
+#    Save the file into the data directory but don't commit it to github!!! [2P]
 
 
 # 2. Read the file using xarray. Get to know your data. What's in the file?
